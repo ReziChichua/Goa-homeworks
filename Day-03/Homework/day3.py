@@ -1,0 +1,10 @@
+balance=300
+movie="batman"
+goa="college"
+hp=100
+age=15
+size="medium"
+price=200
+amount=5
+laptop="black"
+house="expensive"

@@ -1,7 +1,7 @@
 print(type(5))
 
-#int-string
-#str-integer
+#int-integer
+#str-string
 #float
 #boolean
 

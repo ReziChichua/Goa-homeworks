@@ -1,7 +1,7 @@
 from turtle import *
 
 
-speed(30)
+speed(5)
 width(7)
  
 color("purple")

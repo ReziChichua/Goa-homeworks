@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 print("Rezi Chichua")
 
 print("Goa aris sauketeso programirebis skola")
@@ -16,4 +15,3 @@ print("Rezi Chichua")
 print("Goa aris sauketeso programirebis skola")
 
 print(10+20)
->>>>>>> c971962a89e3d0a30594aaf46b6270628fc63e5e
