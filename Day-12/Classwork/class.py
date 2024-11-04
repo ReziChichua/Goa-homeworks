@@ -1,0 +1,17 @@
+print(True and True)
+print(True and False)
+print(True and True and True and False)
+print(False and False)
+print(False and True)
+
+print(False or False)
+print(True or True)
+print(True or False)
+print(False or True)
+print(False or False or False or True)
+
+print((5>1) and (8<1))
+print((9>=9) or (7>8))
+print((5<=8) or (1>=8))
+print((7<8) and (4>=3))
+print(not True)
