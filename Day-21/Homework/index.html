@@ -1,0 +1,74 @@
+<!--Page Layout (გვერდის განლაგება) აუცილებელია ვებ გვერდის სტრუქტურის განსაზღვრაში, რათა მომხმარებელს ჰქონდეს ნათელი და
+ ადვილად შესაცნობი ინტერფეისი. ეს უზრუნველყოფს ვიზუალურ ორგანიზაციას, ამცირებს გამორიცხულობებს და აამაღლებს გვერდის გამოყენების
+  სიმარტივეს.-->
+<!--Semantical tags (სემანტიკური თეგები) HTML-ში ნიშნავს ისეთ ტეგებს, რომლებიც იცნობენ ან აღწერენ კონტენტის მნიშვნელობას.
+ ეს ტეგები ეხმარება ბრაუზერებს, ძიების სისტემებს და მომხმარებლებს კონტენტის სწორად აღქმაში.-->
+ 
+ <!--Block-level elements:
+
+ეს ელემენტები განთავსდება ახალ ხაზზე და იკავებენ სრულ განივ სიგანეს. ანუ თუ ჩვენ გვაქვს რამდენიმე block-level ელემენტი გვერდზე,
+ ისინი დამალავს ერთმანეთს და განლაგდებიან ყოველ ახალ ხაზზე.
+მაგალითად: <div>, <section>, <header>, <footer>, <p>, <h1>, <ul>, <ol>.-->
+
+<!--Inline elements:
+
+ეს ელემენტები არ ქმნიან ახალ ხაზს და განლაგდებიან იმავე ხაზზე, სადაც ისინი არიან. ანუ, ისინი მხოლოდ იმდენი ადგილს იკავებენ,
+ რამდენიც საჭიროა.
+მაგალითად: <a>, <strong>, <em>, <img>.-->
+
+<!--style attribute გამოიყენება HTML ელემენტების შიდა სტილის განსაზღვრაში.
+ ეს იძლევა საშუალებას, რომ კონკრეტულ ელემენტზე გამოვიყენოთ CSS თვისებები, მაგალითად, ფერი, ფონტი, ზღვარი და ა.შ.-->
+
+ <!--<div> არის ბლოკის ტიპის კონტეინერი, რომელიც გამოიყენება სხვადასხვა ელემენტების ჯგუფირებისთვის.
+     ეს არ გავლენობს ვიზუალურ იერსახეზე, მაგრამ ძალიან ეფექტურია სტილის და სკრიპტების ადმინისტრირებაში.
+     ხშირად გამოიყენება სემანტიკური ელემენტების ჯგუფირებისთვის, მაგალითად, განლაგებისთვის.-->
+
+<p style="color: red;">This paragraph is red.</p>
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - site</title>
+</head>
+<body>
+    <header>
+        <h1>Python Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us </a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <main>
+        <section id="home">
+            <h2>Python - Plan and Basics</h2>
+            <p>Python is a high-level programming language that is very popular for its simplicity and widespread use.</p>
+        </section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="about">
+            <h2>About us</h2>
+            <p>We teach Python proggraming and offer u detailed tutorials.</p>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <section id="tutorials">
+            <h2>Tutorials</h2>
+            <ul>
+                <li><a href="#">Python-ი For Begginers</a></li>
+                <li><a href="#">Python-ს tasks</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Python website</p>
+    </footer>
+</body>
+</html>
