@@ -1,6 +1,5 @@
 def multiply(a, b):
     return a * b
-print(multiply(5,5))
 
 
 def even_or_odd(number):
@@ -9,3 +8,6 @@ def even_or_odd(number):
     else:
         return "Odd"
     
+
+
+
