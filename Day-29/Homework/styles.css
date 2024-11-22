@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+#s{
+    text-shadow: 5px 5px 3px;
+}
+
+#a{
+    font-family: "Sour Gummy", fantasy
+}
+
+#b{
+    font-family: "Edu Australia VIC WA NT Hand Arrows", sans-serif
+}
+
+
+#c{
+    font-family:"Doto", cursive  
+}
+

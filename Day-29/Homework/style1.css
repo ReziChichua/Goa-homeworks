@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+h1{
+    color:aliceblue;
+    background-color: black;
+    text-align: center;
+    text-shadow: 1px 1px 3px whitesmoke;
+}
+
+#w{
+    color:gold;
+    text-decoration: dashed underline;
+}
+
+#s{
+    color:orange;
+    background-color: orangered;
+    text-shadow: 1px 1px 3px orange;
+    text-align: center;
+}
+
+#m{
+    color:aqua;
+    background-color: blue;
+    text-shadow: 1px 1px 3px aqua;
+    text-align: center;
+}
+
+#l{
+    color:brown;
+    background-color: darkred;
+    text-shadow: 1px 1px 3px brown;
+    text-align: center;
+}
+
+#i{
+    color: yellow;
+    background-color: darkorange;
+    text-shadow: 1px 1px 3px yellow;
+    text-align: center;
+}
+
+#g{
+    width: 30px;
+}
+button{
+    color: beige;
+    background-color: darkslategray;
+}
+
+#author{
+    text-align: right;
+}

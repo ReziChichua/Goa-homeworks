@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+#p1{
+    text-decoration: dashed overline;
+}
+
+#p2{
+    text-decoration: dotted underline;
+}
+
+#p3{
+    text-decoration: line-through;
+}
+#p4{
+    text-decoration: overline;
+}
+
+#p5{
+    text-decoration: wavy line-through;
+}
+
+#p6{
+    text-decoration: dashed line-through overline underline;
+}
+
+#f{
+    font-family: "Bebas Neue" , sans-serif;
+    font-size: xx-large;
+}
