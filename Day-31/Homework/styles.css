@@ -1,0 +1,20 @@
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+button{
+    background-color:cornflowerblue;
+    border: none;
+    width: 70px;
+    height:25px;
+    border-radius: 12.50px;
+    font-size: small;
+}
+button:hover{
+    background-color:aquamarine
+}

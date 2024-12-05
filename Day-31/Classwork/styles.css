@@ -1,0 +1,28 @@
+a:link{
+    color:blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color:purple;
+    text-decoration: dotted underline darkmagenta;
+}
+
+a:active{
+    color:brown;
+    box-shadow: brown;
+}
+
+a:visited{
+    color: crimson;
+}
+
+button:link{
+    color:blue;
+}
+
+button:hover{
+    color:blueviolet;
+    box-shadow: blueviolet;
+}
+
