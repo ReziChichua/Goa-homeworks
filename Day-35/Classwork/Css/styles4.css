@@ -1,0 +1,21 @@
+input[type="text"] {
+    background-color: #f9f9f9;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+input[type="email"] {
+    background-color: #eaf5ff;
+    margin: 5px;
+    border: 1px solid #aac;
+}
+input[type="password"] {
+    background-color: #fff9f9;
+    margin: 5px;
+    border: 1px solid #cca;
+}
+input[type="submit"]{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

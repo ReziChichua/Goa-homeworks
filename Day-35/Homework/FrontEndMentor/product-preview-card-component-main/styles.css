@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --Dark-Cyan:hsl(158, 36%, 37%);
+    --Cream:hsl(30, 38%, 92%);
+
+    --Very-Dark_blue:hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --fw-regular:500;
+    --fw-bold:700;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Cream);
+}
+
+h1{
+    font-family: "Fraunces", serif;
+}
+p,span{
+    font-family: "Montserrat", sans-serif;
+}
+
+.card{
+    width: 800px;
+    height: 600px;
+
+    background-color: var(--white);
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image{
+    min-width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/image-product-desktop.jpg);
+}
+
+.card-info{
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-info span{
+    color: var(--Dark_grayish_blue);
+    letter-spacing: 5px;
+}
+
+.card-info h1{
+    font-size: 45px;
+    color: var(--Very-Dark_blue);
+}
+
+.card-info p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.price h1{
+    color: var(--Dark-Cyan);
+}
+
+.price span{
+    letter-spacing: 0;
+    text-decoration: line-through;
+}
+
+.primary-btn{
+    color: var(--white);
+    border: none;
+    background-color: var(--Dark-Cyan);
+    pad: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    height: 60px;
+}

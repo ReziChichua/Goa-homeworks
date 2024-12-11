@@ -1,0 +1,4 @@
+ol {
+    list-style-position: inside; /* მარკის შეწევა */
+    list-style-type: upper-alpha; /* დიდი ინგლისური ასოები */
+}

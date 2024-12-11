@@ -1,3 +1,8 @@
+a{
+    text-decoration: none;
+}
+
+
 a:hover {
     color: red;
     text-decoration: underline;
@@ -13,7 +18,8 @@ button{
     width: 70px;
     height:25px;
     border-radius: 12.50px;
-    font-size: small;
+    font-size: 11px;
+    cursor: pointer;
 }
 button:hover{
     background-color:aquamarine

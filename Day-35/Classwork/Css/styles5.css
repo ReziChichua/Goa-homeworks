@@ -1,0 +1,13 @@
+.lemon {
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    border-radius: 250px 50px 250px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    border: 2px solid #000;
+}
