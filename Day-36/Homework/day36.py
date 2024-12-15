@@ -1,7 +1,6 @@
 #1
 def rental_car_cost(d):
-    daily= 40
-    total= daily * d
+    total= 40 * d
     if d >= 7:
         return total - 50
     elif d >=3:
@@ -39,4 +38,11 @@ def manual_in(x, y):
     for item in y:
         if item == x:
             return True  
+    return False
+
+
+def manual_in(x,collection):
+    for i in collection:
+        if i == x:
+            return True
     return False

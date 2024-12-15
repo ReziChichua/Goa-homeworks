@@ -30,6 +30,7 @@ body{
     justify-self: center;
     align-items: center;
     flex-direction: column;
+    padding: 180px;
     background-color: var(--Cream);
 }
 
@@ -43,7 +44,6 @@ p,span{
 .card{
     width: 800px;
     height: 600px;
-
     background-color: var(--white);
     display: flex;
     border-radius: 20px;
@@ -107,3 +107,4 @@ p,span{
     cursor: pointer;
     height: 60px;
 }
+
