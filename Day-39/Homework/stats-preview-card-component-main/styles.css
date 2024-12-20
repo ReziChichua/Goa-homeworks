@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+
+
+.main{
+    background-color:  hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    padding: 70px 110px 50px 80px;
+    justify-content: space-between;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    
+}
+h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+img{
+    border-radius: 0 20px 20px 0;
+    width: 90%;
+    height: 60vh;
+    background-size: cover;
+}
+
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.main_text{
+    font-size: large;
+}
+
