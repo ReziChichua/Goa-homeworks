@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Card styling */
+  .card {
+    background: white;
+    border-radius: 10px;
+    width: 350px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  /* Header styling */
+  .card-header {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  .bg-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .bg-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .profile-picture {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+  }
+  
+  /* Body styling */
+  .card-body {
+    margin-top: 50px;
+  }
+  
+  .card-body h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  
+  .card-body h1 span {
+    font-weight: 400;
+    color: hsl(229, 23%, 23%);
+  }
+  
+  .card-body p {
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+  }
+  
+  /* Footer styling */
+  .card-footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid hsl(225, 20%, 94%);
+    padding: 20px 0;
+  }
+  
+  .card-footer div h2 {
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+  }
+  
+  .card-footer div p {
+    font-size: 12px;
+    color: hsl(227, 10%, 46%);
+    margin-top: 5px;
+  }

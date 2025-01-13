@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(222, 222, 222);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    box-shadow: rgb(78, 77, 77) 0 0 10px;
+    border-radius: 20px;
+}
+
+.icon{
+    display: flex;
+}
+
+.texts{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 10px;
+}
+
+p{
+    color: gray;
+}
+
+.iccon{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#name{
+    color: black;
+    font-weight: 600;
+}
+
+#lol{
+    margin-top: 10px;
+}
