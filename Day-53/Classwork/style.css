@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.pirveli{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+
+.pirveli:hover{
+    transform: translate(50px);
+}
+
+.meore{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.meore:hover{
+    transform: scale(2);
+}
+
+.mesame{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.mesame:hover{
+    transform: scale(1.5);
+}
+
+.mesame:active{
+    transform: scale(0.8);
+}
+
+.meotxe{
+    width: 300px;
+    height: 200px;
+    background-color: yellow;
+    transition: 1s;
+}
+
+.meotxe:hover{
+    transform: rotate(180deg);
+}
+
+
+.mexute{
+    width: 300px;
+    height: 200px;
+    background-color: purple;
+    transition-delay: 2s;
+    transition: background-color 1s, transform 5s;
+}
+
+.mexute:hover{
+    background-color: aqua;
+    transform: rotate(180deg);
+}

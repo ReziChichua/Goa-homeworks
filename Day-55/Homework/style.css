@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: red;
+    border-radius: 10px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: blue;
+    border-radius: 50%;
+  }
+
+  .color-change {
+    animation: colorChange 3s linear infinite alternate;
+  }
+
+  @keyframes colorChange {
+    0% {
+      background-color: red;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+
+  /* Animation 3: Move 200px to the right in 2 seconds */
+  .move-right {
+    animation: moveRight 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+  }
+
+  /* Animation 4: Rotate the circle continuously in 1 second */
+  .rotate-circle {
+    animation: rotateCircle 1s linear infinite;
+  }
+
+  @keyframes rotateCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Animation 5: Rotate 360° and scale up by 1.5x in 4 seconds */
+  .rotate-scale {
+    animation: rotateScale 4s ease-in-out infinite;
+  }
+
+  @keyframes rotateScale {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    100% {
+      transform: rotate(360deg) scale(1.5);
+    }
+  }
