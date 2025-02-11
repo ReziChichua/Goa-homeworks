@@ -37,7 +37,6 @@ body {
     }
   }
 
-  /* Animation 3: Move 200px to the right in 2 seconds */
   .move-right {
     animation: moveRight 2s ease-in-out infinite alternate;
   }
@@ -51,7 +50,6 @@ body {
     }
   }
 
-  /* Animation 4: Rotate the circle continuously in 1 second */
   .rotate-circle {
     animation: rotateCircle 1s linear infinite;
   }
@@ -65,7 +63,6 @@ body {
     }
   }
 
-  /* Animation 5: Rotate 360° and scale up by 1.5x in 4 seconds */
   .rotate-scale {
     animation: rotateScale 4s ease-in-out infinite;
   }
