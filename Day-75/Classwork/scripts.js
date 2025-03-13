@@ -2,7 +2,7 @@ const child = document.getElementById("child");
 
 let left = 0;
 let y = 0;
-let direction = "down"; // პირველი მოძრაობა ქვემოთ
+let direction = "down"; 
 
 const move = setInterval(function () {
     if (direction == "down") {
