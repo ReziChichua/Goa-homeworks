@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User System</title>
+</head>
+<body>
+  <h2>Register</h2>
+  <input id="regName" placeholder="Full Name" />
+  <input id="regEmail" placeholder="Email" />
+  <input id="regPass" placeholder="Password" />
+  <button onclick="register()">Register</button>
+
+  <h2>Login</h2>
+  <input id="loginEmail" placeholder="Email" />
+  <input id="loginPass" placeholder="Password" />
+  <button onclick="login()">Login</button>
+
+  <div id="output"></div>
+
+  <script>
+    // სტარტზე გვაქვს ერთი ადმინისტრატორი
+    const admin = {
+      name: "Admin",
+      email: "admin@site.com",
+      password: "admin123",
+      role: "admin"
+    };
+
+    // თუ არ არსებობს localStorage-ში მომხმარებლები, ვამატებთ მხოლოდ ადმინისტრატორს
+    if (!localStorage.getItem("users")) {
+      localStorage.setItem("users", JSON.stringify([admin]));
+    }
+
+    function register() {
+      const name = document.getElementById("regName").value;
+      const email = document.getElementById("regEmail").value;
+      const password = document.getElementById("regPass").value;
+
+      const users = JSON.parse(localStorage.getItem("users"));
+
+      const userExists = users.find(user => user.email === email);
+      if (userExists) {
+        alert("Email already used!");
+        return;
+      }
+
+      users.push({ name, email, password, role: "user" });
+      localStorage.setItem("users", JSON.stringify(users));
+      alert("User registered!");
+    }
+
+    function login() {
+      const email = document.getElementById("loginEmail").value;
+      const password = document.getElementById("loginPass").value;
+
+      const users = JSON.parse(localStorage.getItem("users"));
+      const user = users.find(u => u.email === email && u.password === password);
+
+      const output = document.getElementById("output");
+      output.innerHTML = "";
+
+      if (user) {
+        if (user.role === "admin") {
+          output.innerHTML += `<h3>Welcome Admin!</h3>`;
+          users.forEach((u, index) => {
+            output.innerHTML += `
+              <p>
+                ${u.name} - ${u.email}
+                ${u.role !== 'admin' ? `<button onclick="deleteUser(${index})">Delete</button>` : ''}
+              </p>
+            `;
+          });
+        } else {
+          output.innerHTML = `
+            <h3>Welcome, ${user.name}</h3>
+            <p>Email: ${user.email}</p>
+          `;
+        }
+      } else {
+        alert("Invalid credentials!");
+      }
+    }
+
+    function deleteUser(index) {
+      let users = JSON.parse(localStorage.getItem("users"));
+      users.splice(index, 1);
+      localStorage.setItem("users", JSON.stringify(users));
+      login(); // რეფრეში
+    }
+  </script>
+</body>
+</html>

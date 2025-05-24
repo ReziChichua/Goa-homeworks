@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="outer" style="padding: 20px; background: lightcoral;">
+      Outer
+      <div id="middle" style="padding: 20px; background: lightgreen;">
+        Middle
+        <div id="inner" style="padding: 20px; background: lightblue;">
+          Inner
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // 🌊 BUBBLING: ღილაკზე დაჭერისას ჯერ ხდება შიგნით და მერე ზემოთ მიდის
+      document.getElementById("outer").addEventListener("click", () => {
+        console.log("Bubbling - Outer clicked");
+      });
+
+      document.getElementById("middle").addEventListener("click", () => {
+        console.log("Bubbling - Middle clicked");
+      });
+
+      document.getElementById("inner").addEventListener("click", () => {
+        console.log("Bubbling - Inner clicked");
+      });
+
+      // 🌀 CAPTURING: ღილაკზე დაჭერისას ჯერ გარედან იწყებს და შიგნით მიდის
+      document.getElementById("outer").addEventListener(
+        "click",
+        () => {
+          console.log("Capturing - Outer clicked");
+        },
+        true // ეს ნიშნავს capturing mode
+      );
+
+      document.getElementById("middle").addEventListener(
+        "click",
+        () => {
+          console.log("Capturing - Middle clicked");
+        },
+        true
+      );
+
+      document.getElementById("inner").addEventListener(
+        "click",
+        () => {
+          console.log("Capturing - Inner clicked");
+        },
+        true
+      );
+    </script>
+  </body>
+</html>

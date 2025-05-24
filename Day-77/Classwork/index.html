@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <div id="outer" style="padding: 30px; background: lightcoral;">
+    Outer
+    <div id="middle" style="padding: 30px; background: lightgreen;">
+      Middle
+      <div id="inner" style="padding: 30px; background: lightblue;">
+        Inner
+      </div>
+    </div>
+  </div>
+    <script>
+        // როდესაც მოვლენა (event), მაგალითად click, ჯერ ხდება ყველაზე შიდა ელემენტზე და მერე ზემოთ, მშობლებზე მოძრაობს
+        // Capturing არის საპირისპირო: მოვლენა პირველი ხდება ყველაზე გარედან, და მერე მოდის შიგნით.
+
+        document.getElementById("outer").addEventListener("click", () => {
+      console.log("Outer clicked - BUBBLING");
+    });
+
+    document.getElementById("middle").addEventListener("click", () => {
+      console.log("Middle clicked - BUBBLING");
+    });
+
+    document.getElementById("inner").addEventListener("click", () => {
+      console.log("Inner clicked - BUBBLING");
+    });
+
+    
+    document.getElementById("outer").addEventListener("click", () => {
+      console.log("Outer clicked - CAPTURING");
+    }, true);
+
+    document.getElementById("middle").addEventListener("click", () => {
+      console.log("Middle clicked - CAPTURING");
+    }, true);
+
+    document.getElementById("inner").addEventListener("click", () => {
+      console.log("Inner clicked - CAPTURING");
+    }, true);
+    </script>
+</body>
+</html>

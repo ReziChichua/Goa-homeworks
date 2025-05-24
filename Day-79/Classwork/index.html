@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ES6 (ECMAScript 2015) გამოქვეყნდა 2015 წლის ივნისში
+        //ES6-მა ბევრი ახალი შესაძლებლობა შემოიტანა, რაც JS-ს გაამარტივებს და გააუმჯობესებს.
+
+        //let და const უფრო უსაფრთხოა შეცდომებისგან
+        //არ იძლევა იგივე ცვლადის ხელმეორედ შექმნის საშუალებას
+        //const იცავს მონაცემის შეცვლას (განსაკუთრებით მნიშვნელოვანი როცა ობიექტებთან მუშაობ)
+
+
+        const fruits = ["apple", "banana", "cherry"];
+
+        for (const fruit of fruits) {
+            console.log(fruit);
+        }
+
+        const person = { name: "Ana", age: 22, city: "Tbilisi" };
+
+        for (const key in person) {
+            console.log(`${key}: ${person[key]}`);
+        }
+
+        const obj1 = { a: 1, b: 2 };
+        const obj2 = { b: 3, c: 4 };
+        const combined = Object.assign({}, obj1, obj2);
+        console.log(combined);
+
+        const sum = (a, b) => a + b;
+        console.log(sum(3, 4));
+    </script>
+</body>
+</html>

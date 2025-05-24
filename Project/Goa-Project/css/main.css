@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Bebas+Neue&family=Doto:wght@100..900&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playwrite+ZA+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    padding-top: 23px;
+    background-image: url(../html/images/Screenshot\ 2025-05-17\ 155322.png) ;
+    box-shadow: 0px 0px 10px rgb(144, 255, 79);
+}
+
+body{
+    background-image: url(../html/images/background.jpg);
+    background-size: cover;
+    font-family: "Ancizar Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    flex-direction: row;
+    gap: 300px;
+}
+
+ul b{
+    color: rgb(97, 192, 97);
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+ul{
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 20px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+
+nav img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#pics img{
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10pxrgb(72, 12, 12);
+}
+
+main{
+    padding-top: 200px;
+    padding-bottom: 120px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#pics{
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+#virginchad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#benefits{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+#p1{
+    background-color: rgb(177, 84, 81);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 650px;
+    padding: 20px;
+    box-shadow: 0px 0px 10pxrgb(72, 12, 12);
+    display: flex;
+    font-family: "Ancizar Sans";
+    font-size: large;
+}
+#p2{
+    background-color:rgb(177, 84, 81);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 0px 10pxrgb(72, 12, 12);
+    font-family: "Ancizar Sans";
+    font-size: large;
+}
+#p3{
+    background-color:rgb(177, 84, 81);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(72, 12, 12);
+    font-family: "Ancizar Sans";
+    font-size: large;
+}
+footer{
+    background-color: black;
+    height: 20vh;
+    box-shadow: 0px 0px 10pxrgb(72, 12, 12);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fb img{
+    height: 100px;
+    width: 100px;
+}
+.yt img{
+    height: 100px;
+    width: 100px ;
+}
+
+.fb{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.yt{
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 1rem;
+  }
+
+

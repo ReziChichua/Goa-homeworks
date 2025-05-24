@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>წიგნების ძებნა</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    .book {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      gap: 15px;
+    }
+    .book img {
+      max-width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Find Books</h1>
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Book Name..." required>
+    <button type="submit">Find</button>
+  </form>
+
+  <div id="results"></div>
+
+  <script src="./script2.js">
+  </script>
+</body>
+</html>

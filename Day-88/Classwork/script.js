@@ -6,4 +6,17 @@ function Summarize (...n) {
     return sum
 }
 
-console.log(Summarize(1,3,5,6,8))
+console.log(Summarize(1,3,5))
+
+
+const Male = {
+    Muscle: "5kg",
+    Money: "500k Dollars"
+}
+
+const Female = {
+    height: "150cm",
+    weight:"60kg"
+}
+
+const person = {...Male,  ...Female}
